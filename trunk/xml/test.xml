@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui xmlns:widget='org.uinator.Widget' 
+    xmlns:validator="org.uinator.Validator"
+	xmlns:style="org.uinator.widget.styles.Style"
+	xmlns:event="org.uinator.widget.events.Event"
+	xmlns:const="#constant"
+	xmlns:variable="org.uinator.code.haxe.Variable"
+	xmlns:callback="org.uinator.code.haxe.Method"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://xnova.test:8081/semantics.xsd">
+    <widget:events> 
+    	<event:event const:type="RENDER">
+    		<callback:method context="Main" name="render"/>
+			<callback:method type="Void">
+				<variable:argument name="e" type="Event"/>
+		    </callback:method>
+    	</event:event>
+    </widget:events>
+    <imports>
+    	<import path="haxeui.widget.Form"/>
+	    <import path="haxeui.events.Event"/>
+		<import path="haxeui.widget.Label"/>
+		<import path="haxeui.widget.TextField"/>
+		<import path="haxeui.widget.Password"/>
+		<import path="haxeui.widget.Fieldset"/>
+	</imports>
+    <widget:form name='auth_form' const:layout="BorderLayout">
+        <style:style>
+            <dimension width="500" height="400"/>
+            <position x="100" height="200"/>
+        </style:style>
+        <widget:label>Authorization Form</widget:label>
+        <widget:fieldset>
+            <widget:textfield name="login" required="true">
+                <widget:label>Enter your login</widget:label>
+                <validators>
+                    <validator:validator minsize="5" maxsize="25"/>
+                </validators>
+            </widget:textfield>
+            <widget:password name="login" required="true">
+                <widget:label>And password</widget:label>
+            </widget:password>
+        </widget:fieldset>  
+    </widget:form>
+</ui>
