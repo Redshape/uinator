@@ -3,7 +3,7 @@
     xmlns:validator="org.uinator.Validator"
 	xmlns:style="org.uinator.widget.styles.Style"
 	xmlns:event="org.uinator.widget.events.Event"
-	xmlns:const="#constant"
+	xmlns:const="#constant1"
 	xmlns:variable="org.uinator.code.haxe.Variable"
 	xmlns:callback="org.uinator.code.haxe.Method"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
