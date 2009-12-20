@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: nikelin
+Build-Jdk: 1.6.0_6
+Extension-Name: uinator
+Specification-Vendor: Cyril A. Karpenko
+Implementation-Vendor: Cyril A. Karpenko
+Implementation-Title: UINator
+Implementation-Version: 1.0-SNAPSHOT
+Main-Class: com.uinator.Main
+mode: development
+url: http://github.com/nikelin/uinator
